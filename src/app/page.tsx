@@ -1,6 +1,7 @@
+import { TodoList } from "@/components";
 
 const Page = () => {
-     return <></>;
-};
-
+  return (<TodoList/>  );
+}
+ 
 export default Page;
