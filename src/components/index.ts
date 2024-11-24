@@ -4,10 +4,12 @@ import TodoList from './future/toDoList';
 import AddSearchBox from './future/common/addSearchBox/index';
 import TodoListBox from './future/to-do-list-box/index';
 import ItemOfList from './future/itemOfList/index';
+import AddIcon from './future/common/addIcon/index';
 export {
      TodoList,
      SearchIcon,
      FilterSearchBox,
      AddSearchBox,
      TodoListBox,
-     ItemOfList};
+     ItemOfList,
+     AddIcon};

@@ -1,12 +1,7 @@
 import ItemOfList from '../itemOfList';
 import IToDoListBox from './toDoListBox.type';
 const TodoListBox = ({ todos, bloom, setTodos, filter }: IToDoListBox) => {
-     const editTodo = (id: number, newText: string) => {
-          const updatedTodos = todos.map((todo) =>
-               todo.id === id ? { ...todo, text: newText } : todo
-          );
-          setTodos(updatedTodos);
-     };
+     
      const filteredTodos = todos.filter(
           (todo) => bloom.test(todo.text) && todo.text.includes(filter)
      );
@@ -20,7 +15,6 @@ const TodoListBox = ({ todos, bloom, setTodos, filter }: IToDoListBox) => {
                     <ItemOfList
                          key={todo.id}
                          deleteTodo={deleteTodo}
-                         editTodo={editTodo}
                          todo={todo}
                     />
                ))}
